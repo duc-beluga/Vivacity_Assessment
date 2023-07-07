@@ -81,20 +81,20 @@ function App() {
      
         
       </div>
-      {!isHidden && <form className='pl-44 pr-44 mt-10 mb-10 font-mono' onSubmit={handleSubmit}>
-      Welcome, I'm <input name="name" type="text"value={editData.name || ''} className=' rounded-md pl-2' onChange={handleInputChange}/>
+      {!isHidden && <form className='pl-44 pr-44 mt-10 mb-10 font-mono' onSubmit={handleSubmit} >
+      Welcome, I'm <input name="name" type="text"value={editData.name || ''} className=' rounded-md pl-2 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      Currently, I'm pursuing my studies at <input name="school" type="text" value={editData.school || ''} className='rounded-md pl-2 w-72' onChange={handleInputChange}/>
+      Currently, I'm pursuing my studies at <input name="school" type="text" value={editData.school || ''} className='rounded-md pl-2 w-72 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      My all-time favorite movie is the <input name="movie" type="text" value={editData.movie || ''} className='rounded-md pl-2' onChange={handleInputChange}/>
+      My all-time favorite movie is the <input name="movie" type="text" value={editData.movie || ''} className='rounded-md pl-2 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      For leisure, I enjoy playing the game <input name="game" type="text" value={editData.game || ''} className='rounded-md pl-2' onChange={handleInputChange}/>.
+      For leisure, I enjoy playing the game <input name="game" type="text" value={editData.game || ''} className='rounded-md pl-2 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      My favorite weather is <input name="weather" type="text" value={editData.weather || ''} className='rounded-md pl-2' onChange={handleInputChange}/>
+      My favorite weather is <input name="weather" type="text" value={editData.weather || ''} className='rounded-md pl-2 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      You can reach me at <input name="email" type="text" value={editData.email || ''} className='rounded-md pl-2' onChange={handleInputChange}/>
+      You can reach me at <input name="email" type="text" value={editData.email || ''} className='rounded-md pl-2 border-2 border-gray-500 mb-2' onChange={handleInputChange}/>
       <br/>
-      <button className='bg-green-700 rounded-md' type='submit'>Submit</button>
+      <button className='bg-blue-700 rounded-md w-40 text-white mt-4' type='submit'>Submit changes.</button>
       </form> }
     </div>
   );
